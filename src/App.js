@@ -41,13 +41,13 @@ function App() {
    }, []);
 
    return (
-      <div className="App">
+      <div className="App font-gilroy font-light">
          {sections.map(({ Component, id }, index) => (
             <motion.div
                key={id}
                initial={{ opacity: 0, y: 50 }} // Initial state for parallax effect
                animate={{ opacity: 1, y: 0 }} // Final state
-               transition={{ duration: 0.5, delay: index * 0.5 }} // Delay for each section
+               transition={{ duration: 2, delay: index * 2, ease: 'easeInOut' }} // Delay for each section
                className="section"
                id={id} // Set id for scrolling
             >

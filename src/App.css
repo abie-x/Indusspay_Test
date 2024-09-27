@@ -1,7 +1,7 @@
 .App {
-  scroll-snap-type: y mandatory; /* Enables snap behavior */
-  overflow-y: scroll; /* Allows vertical scrolling */
-  height: 100vh; /* Ensure the App container takes full height */
+  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Set height for scroll container */
 }
 .section {
   overflow: hidden; /* Prevents overflow for better scroll effect */
