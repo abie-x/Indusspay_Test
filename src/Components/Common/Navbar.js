@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Button from './Button';
 import Logo from '../../Assets/Logo.png';
 
@@ -11,48 +12,48 @@ const Navbar = () => {
    };
 
    return (
-      <nav className="bg-white fixed w-full z-10 text-black font-medium">
+      <nav className="bg-white fixed w-full z-10 text-black font-medium px-2">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
                {/* Left side: logo + navlinks */}
                <div className="flex items-center">
                   {/* Logo */}
                   <div className="flex-shrink-0">
-                     <a href="/" className="text-2xl font-bold">
+                     <Link to="/" className="text-2xl font-bold">
                         <img
                            src={Logo}
                            alt="Logo"
                            className="w-36 h-auto object-contain" // Adjust width as needed
                         />
-                     </a>
+                     </Link>
                   </div>
 
                   {/* Nav Links - Hidden on tablets and smaller */}
                   <div className="hidden lg:flex ml-10 space-x-8">
-                     <a
-                        href="#"
+                     <Link
+                        to="#"
                         className="text-black hover:text-primary px-3 py-2 text-md font-semibold"
                      >
                         Demos
-                     </a>
-                     <a
-                        href="#"
+                     </Link>
+                     <Link
+                        to="#"
                         className="text-black hover:text-primary px-3 py-2 text-md font-semibold"
                      >
                         Pages
-                     </a>
-                     <a
-                        href="#"
+                     </Link>
+                     <Link
+                        to="#"
                         className="text-black hover:text-primary px-3 py-2 text-md font-semibold"
                      >
                         Support
-                     </a>
-                     <a
-                        href="#"
+                     </Link>
+                     <Link
+                        to="/contact" // Navigate to '/contact' route
                         className="text-black hover:text-primary px-3 py-2 text-md font-semibold"
                      >
                         Contact
-                     </a>
+                     </Link>
                   </div>
                </div>
 
@@ -80,18 +81,18 @@ const Navbar = () => {
          {/* Mobile/Tablet Menu */}
          {isOpen && (
             <div className="lg:hidden bg-white px-2 pt-2 pb-3 space-y-1">
-               <a href="#" className="text-gray-600 block px-3 py-2">
+               <Link to="#" className="text-gray-600 block px-3 py-2">
                   Demos
-               </a>
-               <a href="#" className="text-gray-600 block px-3 py-2">
+               </Link>
+               <Link to="#" className="text-gray-600 block px-3 py-2">
                   Pages
-               </a>
-               <a href="#" className="text-gray-600 block px-3 py-2">
+               </Link>
+               <Link to="#" className="text-gray-600 block px-3 py-2">
                   Support
-               </a>
-               <a href="#" className="text-gray-600 block px-3 py-2">
+               </Link>
+               <Link to="/contact" className="text-gray-600 block px-3 py-2">
                   Contact
-               </a>
+               </Link>
                <div className="mt-2">
                   <Button
                      text="Get Started a Project"

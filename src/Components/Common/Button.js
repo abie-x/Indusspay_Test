@@ -7,10 +7,10 @@ const Button = ({ isIcon = false, icon, styles, text, onClick }) => {
          onClick={onClick}
       >
          {isIcon ? (
-            <span className="flex items-center">
-               {icon} {/* Insert icon if provided */}
+            <span className="flex items-center gap-4">
                <span className="ml-2">{text}</span>{' '}
                {/* Add text with spacing */}
+               {icon} {/* Insert icon if provided */}
             </span>
          ) : (
             text

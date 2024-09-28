@@ -5,6 +5,7 @@ module.exports = {
       extend: {
          colors: {
             primary: '#473BF0',
+            rating: '#FCAD38',
          },
          fontFamily: {
             gilroy: ['Gilroy', 'sans-serif'],

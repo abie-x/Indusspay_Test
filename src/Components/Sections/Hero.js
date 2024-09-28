@@ -13,7 +13,7 @@ const Hero = () => {
          animate={{ opacity: 1 }}
          transition={{ duration: 0.5 }}
       >
-         <div>
+         <div className="pr-1 py-4">
             <Navbar />
             <div className="pt-4">
                {' '}
@@ -24,8 +24,40 @@ const Hero = () => {
                   {/* Add your content here */}
                   {/* Responsive grid layout for different screen sizes */}
                   {/* Mobile */}
-                  <div className="grid grid-cols-1 h-full sm:hidden">
-                     <div className="col-span-1 bg-red-200 h-full p-52">hi</div>
+                  <div className="grid md:hidden grid-cols-1 h-full gap-4 pt-24">
+                     <div className="col-span-1  flex flex-col justify-center items-center px-8">
+                        <div className="flex flex-col gap-6">
+                           <Text
+                              styles="text-xs text-red-500 font-semibold"
+                              content={`LET'S SHIFT YOUR BUSINESS`}
+                           />
+                           <Text
+                              styles="text-3xl font-extrabold"
+                              content={`Shift your business fast with Shade Pro`}
+                           />
+                           <Text
+                              styles="text-base text-gray-500"
+                              content={
+                                 <>
+                                    <span>
+                                       With lots of unique blocks, you can
+                                       easily build a page without coding.Build
+                                       your next consultancy
+                                    </span>
+                                    <br /> {/* Line break */}
+                                    <span>website within few minutes.</span>
+                                    <br /> {/* Line break */}
+                                    <span></span>
+                                 </>
+                              }
+                           />
+                           <Button
+                              text="Get Started a Project"
+                              styles="bg-primary text-white w-48 mb-8"
+                           />
+                           <img src={HeroImage} />
+                        </div>
+                     </div>
                   </div>
                   {/* tablets */}
                   <div className="hidden sm:grid sm:grid-cols-1 lg:hidden h-full">
@@ -33,7 +65,7 @@ const Hero = () => {
                         hi
                      </div>
                   </div>
-                  {/* PC */}
+                  {/* PC*/}
                   <div className="hidden lg:grid lg:grid-cols-2 h-full ">
                      <div className="col-span-1  h-full flex flex-col pl-40 pr-12 justify-center items-center">
                         <div className="flex flex-col gap-6">
