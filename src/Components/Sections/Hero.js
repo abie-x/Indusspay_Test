@@ -32,7 +32,7 @@ const Hero = () => {
                   {/* Add your content here */}
                   {/* Responsive grid layout for different screen sizes */}
                   {/* Mobile */}
-                  <div className="grid md:hidden grid-cols-1 h-full gap-4 pt-24">
+                  <div className="grid xl:hidden grid-cols-1 h-full gap-4 pt-24">
                      <div className="col-span-1  flex flex-col justify-center items-center px-8">
                         <div className="flex flex-col gap-6">
                            <Text
@@ -69,11 +69,11 @@ const Hero = () => {
                      </div>
                   </div>
                   {/* tablets */}
-                  <div className="hidden sm:grid sm:grid-cols-1 lg:hidden h-full">
+                  {/* <div className="hidden sm:grid sm:grid-cols-1 lg:hidden h-full">
                      <div className="col-span-1 bg-green-200 h-full p-52">
                         hi
                      </div>
-                  </div>
+                  </div> */}
                   {/* PC*/}
                   <div className="hidden lg:grid lg:grid-cols-2 h-full ">
                      <div className="col-span-1  h-full flex flex-col pl-40 pr-12 justify-center items-center">
