@@ -3,12 +3,20 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Button from './Button';
 import Logo from '../../Assets/Logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false);
 
    const toggleMenu = () => {
       setIsOpen(!isOpen);
+   };
+
+   const navigate = useNavigate();
+
+   const navigateHandler = () => {
+      console.log('hi');
+      navigate('/contact');
    };
 
    return (
@@ -62,6 +70,7 @@ const Navbar = () => {
                   <Button
                      text="Get Started a Project"
                      styles="bg-primary text-white"
+                     onClick={navigateHandler}
                   />
                </div>
 
@@ -97,6 +106,7 @@ const Navbar = () => {
                   <Button
                      text="Get Started a Project"
                      styles="bg-primary text-white"
+                     onClick={navigateHandler}
                   />
                </div>
             </div>

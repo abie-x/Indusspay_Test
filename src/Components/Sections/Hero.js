@@ -4,8 +4,16 @@ import Navbar from '../Common/Navbar';
 import Text from '../Common/Text';
 import Button from '../Common/Button';
 import HeroImage from '../../Assets/Image.png';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+   const navigate = useNavigate();
+
+   const navigateHandler = () => {
+      console.log('hi');
+      navigate('/contact');
+   };
+
    return (
       <motion.section
          className="h-screen bg-white"
@@ -54,6 +62,7 @@ const Hero = () => {
                            <Button
                               text="Get Started a Project"
                               styles="bg-primary text-white w-48 mb-8"
+                              onClick={navigateHandler}
                            />
                            <img src={HeroImage} />
                         </div>
@@ -98,6 +107,7 @@ const Hero = () => {
                            <Button
                               text="Get Started a Project"
                               styles="bg-primary text-white w-48"
+                              onClick={navigateHandler}
                            />
                         </div>
                      </div>
