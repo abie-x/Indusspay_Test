@@ -151,7 +151,11 @@ const Services = () => {
                <div className="row-span-3 p-2">
                   <div className="h-full grid grid-cols-3">
                      <div className="col-span-1  flex pt-1 justify-center ">
-                        <img src={Customer} className="h-3/5" />
+                        <img
+                           src={Customer}
+                           className="h-3/5"
+                           alt="service-img"
+                        />
                      </div>
 
                      <div className="col-span-2  h-full py-2">
