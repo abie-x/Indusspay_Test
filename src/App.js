@@ -17,9 +17,9 @@ const sections = [
    { Component: Services, id: 'services', animate: true },
    { Component: Story, id: 'story', animate: false },
    { Component: WhyChooseUs, id: 'why-choose-us', animate: true },
-   { Component: CaseStudy, id: 'case-study', animate: true },
-   { Component: Testimonials, id: 'testimonials', animate: true },
-   { Component: Footer, id: 'footer', animate: true },
+   // { Component: CaseStudy, id: 'case-study', animate: true },
+   // { Component: Testimonials, id: 'testimonials', animate: true },
+   // { Component: Footer, id: 'footer', animate: true },
 ];
 
 function App() {
