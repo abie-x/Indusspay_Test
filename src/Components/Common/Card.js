@@ -11,7 +11,11 @@ const Card = ({ imageSrc, heading, description, imageStyles, cardStyle }) => {
             {' '}
             {/* Set a fixed height for the grid container */}
             <div className=" row-span-2 h-full p-0 flex items-center justify-center">
-               <img src={imageSrc} className={`${imageStyles}`} />
+               <img
+                  src={imageSrc}
+                  className={`${imageStyles}`}
+                  alt="card-img"
+               />
             </div>
             <div className="row-span-2 h-full">
                <div className="flex flex-col justify-center items-center h-full px-8 gap-y-4 text-center">

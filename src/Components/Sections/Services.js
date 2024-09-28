@@ -56,7 +56,11 @@ const Services = () => {
                <div class="row-span-1 p-3">
                   <div className="h-full grid grid-cols-3">
                      <div className="col-span-1  flex justify-center">
-                        <img src={Customer} className="h-20" />
+                        <img
+                           src={Customer}
+                           className="h-20"
+                           alt="services-img"
+                        />
                      </div>
                      <div className="col-span-2 ">
                         <div className="flex flex-col justify-between items-start gap-y-1">
