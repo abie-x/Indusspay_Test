@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
                   <div className="h-full grid grid-rows-2 gap-y-6">
                      <div className="0 h-full grid grid-cols-2 gap-x-8">
                         <div className=" flex justify-end gap-x-4">
-                           <img src={PM} className="h-16" />
+                           <img src={PM} className="h-16" alt="features" />
                            <div className="flex flex-col gap-y-4">
                               <Text
                                  content={'Dedicated Product Manager'}
@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
                            <div className="bg-violet-400"></div>
                         </div>
                         <div className=" flex justify-start gap-x-4">
-                           <img src={Task} className="h-16" />
+                           <img src={Task} className="h-16" alt="features" />
                            <div className="flex flex-col gap-y-4">
                               <Text
                                  content={'Organized tasks'}
@@ -112,7 +112,11 @@ const WhyChooseUs = () => {
                      </div>
                      <div className=" h-full grid grid-cols-2 gap-x-8">
                         <div className=" flex justify-end gap-x-4">
-                           <img src={Feedback} className="h-16" />
+                           <img
+                              src={Feedback}
+                              className="h-16"
+                              alt="features"
+                           />
                            <div className="flex flex-col gap-y-4">
                               <Text
                                  content={'Easy feedback sharing'}
@@ -140,7 +144,11 @@ const WhyChooseUs = () => {
                            <div className=""></div>
                         </div>
                         <div className="flex justify-start gap-x-4">
-                           <img src={Deadline} className="h-16" />
+                           <img
+                              src={Deadline}
+                              className="h-16"
+                              alt="features"
+                           />
                            <div className="flex flex-col gap-y-4">
                               <Text
                                  content={'Never miss deadline'}

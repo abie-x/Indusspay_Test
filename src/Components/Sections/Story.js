@@ -83,12 +83,14 @@ const Story = () => {
                                  <img
                                     src={FounderMd}
                                     className="object-contain h-56"
+                                    alt="founder-md"
                                  />
                               </div>
                               <div className="col-span-2 flex items-end">
                                  <img
                                     src={FounderSm}
                                     className="object-contain h-24"
+                                    alt="founder-sm"
                                  />
                               </div>
                            </motion.div>

@@ -64,7 +64,7 @@ const Hero = () => {
                               styles="bg-primary text-white w-48 mb-8"
                               onClick={navigateHandler}
                            />
-                           <img src={HeroImage} />
+                           <img src={HeroImage} alt="hero-img" />
                         </div>
                      </div>
                   </div>
@@ -113,7 +113,7 @@ const Hero = () => {
                      </div>
                      <div className="col-span-1 h-full flex justify-center items-center">
                         <div className="h-full py-20">
-                           <img src={HeroImage} />
+                           <img src={HeroImage} alt="hero-img" />
                         </div>
                      </div>
                   </div>

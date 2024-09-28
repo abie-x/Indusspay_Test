@@ -6,9 +6,6 @@ import Hero from './Components/Sections/Hero';
 import Services from './Components/Sections/Services';
 import Story from './Components/Sections/Story';
 import WhyChooseUs from './Components/Sections/WhyChooseUs';
-import CaseStudy from './Components/Sections/CaseStudy';
-import Testimonials from './Components/Sections/Testimonials';
-import Footer from './Components/Sections/Footer';
 import Contact from './Pages/Contact'; // Import the Contact component
 import Info from './Pages/Info';
 

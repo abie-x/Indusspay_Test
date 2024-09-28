@@ -1,5 +1,4 @@
 import React from 'react';
-import Text from './Text'; // Import your Text component
 import Button from './Button'; // Import your Button component
 import { FaArrowRight } from 'react-icons/fa'; // Import right arrow icon
 
